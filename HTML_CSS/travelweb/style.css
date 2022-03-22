@@ -68,12 +68,14 @@ nav {
   /* všimni si, že při scrollování obsahem stránky navigace zůstává 
   na vrchu viewportu  */
   position: fixed;
+  top: 0px;
 }
 
 main {
   /* zajisti, aby navigace nepřekrývala obsah. Navigace je vysoká 
   40px*/
-padding-top: 40px;
+  padding-top: 40px;
+  position: rlative;
 }
 
 .travel {
