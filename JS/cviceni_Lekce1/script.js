@@ -41,7 +41,7 @@ Založte si JavaScriptový program a pomocí document.body.innerHTML a funkce Ma
 na stránce náhodné číslo. Zkuste stránku několikrát po sobě obnovit a ověřte si, že pokaždé 
 obdržíte jiné číslo.*/ 
 
-let nahodneCislo = Math.round(Math.random()*100)
+//let nahodneCislo = Math.round(Math.random()*100)
 //document.body.innerHTML += '<p>' + "nahodne cislo je " + nahodneCislo + '</p>'
 
 
@@ -54,15 +54,15 @@ na celé koruny a uložte do proměnné wageInCzk.
 Vypište obsah proměnné wageInCzk do webové stránky tak, aby na stránce byl nadpis h1 s obsahem:
 Mzda v korunách: 532 Kč*/
 
-let wageInEur = 20
-let kurzCzkEur = 26.58
-let wageInCzk = Math.round(wageInEur * kurzCzkEur)
+//let wageInEur = 20
+//let kurzCzkEur = 26.58
+//let wageInCzk = Math.round(wageInEur * kurzCzkEur)
 
 //document.body.innerHTML += '<h1>wageInCzk</h1>'; toto muzu dat do KONZOLE
 
-let vysledky = document.querySelector("#vysledky")
+//let vysledky = document.querySelector("#vysledky")
 //vysledky.innerHTML = "Měsíční mzda v korunách "+ wageInCzk + "Kč" 
-document.body.innerHTML += '<h1>'+ "Mzda v korunách je " +  wageInCzk + '</h1>'
+//document.body.innerHTML += '<h1>'+ "Mzda v korunách je " +  wageInCzk + '</h1>'
 
 
 
@@ -78,11 +78,11 @@ Založte si JavaScriptový program a uložte čas startu závodu do proměnné s
 délku závodu pro nějakého běžce. Klidně může být pomalejší než náš šampion. Do proměnné konec spočítejte, 
 v kolik hodin závod pro našeho běžce skončí a vypište její obsah do stránky. Vyzkoušejte různé délky 
 a ověřte, že váš postup funguje.*/
-let start = 15
-let bezec1 = 9
-let bezec2 = 5
-let konecBezec1 = (start + bezec1) % 24
-let konecBezec2 = (start + bezec2) % 24
+//let start = 15
+//let bezec1 = 9
+//let bezec2 = 5
+//let konecBezec1 = (start + bezec1) % 24
+//let konecBezec2 = (start + bezec2) % 24
 //document.body.innerHTML += '<p>'+ "První běžec doběhl v " +  konecBezec1 + '</p>'
 //document.body.innerHTML += '<p>'+ "Druhý běžec doběhl v " +  konecBezec2 + '</p>'
 
@@ -97,11 +97,11 @@ Uložte výsledek do proměnné prijem.
 Divadlo se rozhodlo prodávat studentské vstupné ve výši 65% plného vstupného. Jak se změní měsíční 
 příjem divadla pokud víme, že 40% návštěvníků jsou studenti?*/
 
-let prijemDivadla = 12 * 174 * 15
+//let prijemDivadla = 12 * 174 * 15
 
 //console.log("mesicni prijem divadla je " + prijemDivadla)
 
-let prijemDivadlaSleva = (0.65*12)*(174*0.4)*15 + (12*174*0.6*15)
+//let prijemDivadlaSleva = (0.65*12)*(174*0.4)*15 + (12*174*0.6*15)
 
 //console.log("mesicni prijem divadla se studentskyma slevama je " + prijemDivadlaSleva)
 
@@ -121,7 +121,7 @@ zaokrouhlí číslo x s přesností na desetiny,
 zaokrouhlí číslo x s přesností na setiny,
 zaokrouhlí číslo x s přesností na celé stovky.*/
 
-let cislo = 10.1559
+//let cislo = 10.1559
 //console.log("zaokrouhlene cislo na Celá čísla "+ Math.round(cislo))
 //console.log("zaokrouhlene cislo na desetiny "+ Math.round(cislo*10)/10)
 //console.log("zaokrouhlene cislo na setiny "+ Math.round(cislo*100)/100)
@@ -141,7 +141,7 @@ pravděpodobností. Vemte v úvahu, že funkce Math.random generuje náhodná č
 a 1 (vyjma). Je tedy malinká pravěpodobnost, že občas padne přesně číslo 0. Naopak číslo 1 padnout nemůže.
 */
 
-let hodKostkou = Math.round(Math.random()*6)
+//let hodKostkou = Math.round(Math.random()*6)
 //console.log("na kostce padlo " + hodKostkou)
 
 
@@ -179,10 +179,11 @@ Opět dejte pozor na správnou konverzi.*/
 
 //const mzda = Number(prompt("Jaká je vaše hodinová sazba v korunách?"))
 //let hrubaMzda = mzda * 8 * 21
-//document.body.innerHTML += "<p>" + "Vaše hodinová mzda je " + mzda + "Kč, hrubá mzda je " + hrubaMzda +"Kč." + "</p>"
+//document.body.innerHTML += "<p>" + "Vaše hodinová sazba je " + mzda + "Kč, hrubá mzda je " + hrubaMzda +"Kč." + "</p>"
 
-
-
+//const pocetHodinDen = Number(prompt("Kolik hodin denně pracujete?"))
+//const pocetDniVMesici = Number(prompt("Kolik dní v měsíci pracujete?"))
+//document.body.innerHTML += "<p>" + "Vaše hodinová sazba je " + mzda + "Kč, hrubá mzda je " + pocetHodinDen*pocetDniVMesici*mzda +"Kč." + "</p>"
 
 
 /** Realitka
@@ -223,7 +224,7 @@ Pomocí destrukturování si do separátních proměnných uložte město a měs
 do stránky.
 Změnte stav inzerátu z 'free' na 'taken'.*/
 
-const apartment = {
+/*const apartment = {
     type: 'rent',
     disposition: '3+1',
     area: {
@@ -247,8 +248,9 @@ const apartment = {
     status: 'free',
     floor: 3,
   }
+  */
 
-  document.body.innerHTML += "<p>" + "Dispozice bytu: " + apartment.disposition + "</p>"
+  /* document.body.innerHTML += "<p>" + "Dispozice bytu: " + apartment.disposition + "</p>"
   document.body.innerHTML += "<p>"  + "Čistý nájem:  " 
                                     + apartment.price.rent 
                                     + "Kč" +"</p>"
@@ -265,7 +267,7 @@ const apartment = {
   document.body.innerHTML += "<p> zeme: " + misto.city +", oblast: "+ misto.district  +"</p>"
 //Změnte stav inzerátu z 'free' na 'taken'  
 
-apartment.status = "taken"
+//apartment.status = "taken" */
 
 
 
@@ -277,7 +279,7 @@ Přidejte do objektu alespoň tři další vlastnosti tak, aby obsahovaly čísl
 vnořený objekt.
 Vytvořte alespoň jednu další knihu se stejnými vlastnostmi ale jinými hodnotami.*/
 
-const knihovna = {
+/*const knihovna = {
     kniha1:{
         nazev: "13 a 1/2 života Kapitána Modrého Medvěda",
         autor: "Walter Moers",
@@ -308,7 +310,7 @@ const knihovna = {
             nakladatelství: "Odeon",
         },
     }
-}
+}*/
 
 
 
@@ -361,9 +363,9 @@ const rok = datum.substring(6,12)*/
 const mesic = prompt("zadej cislo mesice")
 const rok = prompt("zadej rok")
 */
-document.body.innerHTML += '<p class="date"><span class="day">' + den +"."
+/*document.body.innerHTML += '<p class="date"><span class="day">' + den +"."
                                 + '</span><span class="month">'+ mesic +"."
-                                + '</span><span class="year">'+ rok + '</span></p>'
+                                + '</span><span class="year">'+ rok + '</span></p>'*/
 
 
 
@@ -382,14 +384,18 @@ pomocí document.body.innerHTML vypíše její ekvivalent ve stupních Celsia. *
 
 
 //https://www.metric-conversions.org/cs/teplotu/celsius-do-fahrenheit.htm
+//let teplotaFahrnheit = Number(prompt("Zadejte stupně Fahrenheita, které chcete převést na stupně Celsia."))
 
-
+/*document.body.innerHTML += '<p>'+ "Zadaná teplota "+ teplotaFahrnheit 
+                                + " ve stupních Fahrenheita odpovídá "
+                                + Math.round((teplotaFahrnheit-32)/1.8)
+                                + "°C" + '</p>'*/
 
 
 /**Letenka
 
 Vytvořte webovou stránku s JavaScriptem a do kódu vašeho programu vložte následující 
-objekt představující reálná data o letu z Prahy do Barcelony.
+objekt představující reálná data o letu z Prahy do Barcelony.*/
 
 const flight = {
   id: '145c01af48dd00002715248e_0',
@@ -443,7 +449,7 @@ const flight = {
   },
   quality: 66.66659,
 }
-Proveďte následující:
+/*Proveďte následující:
 
 Vypište do stránky název startovní a cílové země.
 Pomocí destrukturování uložte do separátní proměnné objekt udávající maximální 
@@ -453,3 +459,24 @@ zavazadla a vypište tyto rozměry opět jeden po druhém vypište do stránky.
 Vypište do stránky, kolik cestující zaplatí za druhé zavazadlo v českých 
 korunách zaokrouhleno nahoru na celé koruny.
 Pokud máte chuť, malinko stránku nastylujte, aby se uživatel v informacích vyznal. */
+const prirucni = flight.baglimit
+const odbavovane = flight.baglimit
+const {hand_width, hand_height, hand_length, hand_weight} = prirucni
+const {hold_width, hold_height, hold_length, hold_weight} = odbavovane
+
+document.body.innerHTML += '<p>'+ "Letadlo vylétá z " + flight.countryFrom.name
+                                + " a přistane přistává v " + flight.countryTo.name
+                                + '</p>'
+                        + '<p>' + "Maximální rozměry příručního zavazadla je "
+                                + prirucni.hand_width + "x"
+                                + prirucni.hand_length + "x"
+                                + prirucni.hand_height + ", a váha "
+                                + prirucni.hand_weight + "kg." +'</p>'
+                        + '<p>' + "Maximální rozměr odbavovaného zavazadla je "+ 
+                                + odbavovane.hold_width + "x"
+                                + odbavovane.hold_length + "x"
+                                + odbavovane.hold_height + ", a váha "
+                                + odbavovane.hold_weight + "kg." +'</p>'
+                        + '<p>' + "Za druhé zavazadlo zaplatíte " 
+                                + Math.round(flight.bags_price[2]*flight.conversion.EUR)
+                                + "Kč." + '</p>'
