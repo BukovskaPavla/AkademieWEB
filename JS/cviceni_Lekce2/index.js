@@ -1,4 +1,4 @@
-const person1= {
+/* const person1= {
     firstName: "Pavla",
     age: 32,
     education: {
@@ -7,7 +7,7 @@ const person1= {
     }
 }
 
-const { education } = person1
+const { education } = person1 */
 
 //document.body.innerHTML = `<h1> Ahoj ${person1.firstName} </h1>`
 
@@ -162,7 +162,8 @@ Nezapomeňte na zaokrouhlování, ať nám cena vyjde v celých centech.
 Nakonec spočtenou cenu vypište s nějakou hezkou zprávou na výstup.
 */
 
-/*const vek = Number(prompt("Zadej věk"))
+/* 
+const vek = Number(prompt("Zadej věk"))
 const plnaCena = 12
 let cena = 0
 
@@ -175,8 +176,14 @@ if (vek < 6) {
 } else {
     cena = plnaCena
 }
-document.body.innerHTML = `<p>váš věk je ${vek} a cena vstupného je ${cena}</p>`
-*/
+document.body.innerHTML = `<p>váš věk je ${vek} a cena vstupného je ${cena}</p>
+<ul>
+<li> vek 0 - 6  cena 0</li>
+<li> vek 7 - 27  cena 65% z 12 = 8</li>
+<li> vek 28 - 64  cena 12</li>
+<li> vek 65+  cena 50% z 12 = 6</li>
+</ul>` */
+
 
 
 
@@ -323,8 +330,10 @@ jsou-li zároveň dělitelné 400.
 
 
 
-const rok = Number(prompt("zadej kalendářní rok."))
+/* const rok = Number(prompt("zadej kalendářní rok."))
+
 let vysledek = "nepřestupný"
+
 if (rok % 100 === 0) {
     if (rok % 400 ===0){
         vysledek ="přestupný"
@@ -332,44 +341,8 @@ if (rok % 100 === 0) {
 } else if (rok % 4 === 0){
     vysledek = "přestupný"
 }
-document.body.innerHTML = `<p>${rok} je ${vysledek}</p>`
-
-
-
-
-
-
-/*
-Přestupný rok 2
-
-Napište program, který po zadání kalendářního roku vypíše, zda jde o rok 
-přestupný, či nikoliv. Pro výpis použijte funkci document.body.innerHTML. 
-Smíte ji však v programu použít pouze dvakrát.
+document.body.innerHTML = `<p>${rok} je ${vysledek}</p>` 
 */
-
-
-
-
-
-/*
-Přestupný rok 3
-
-Napište program, který po zadání kalendářního roku vypíše, zda jde o rok 
-přestupný, či nikoliv. Pro výpis použijte funkci document.body.innerHTML. 
-Smíte ji však v programu použít pouze dvakrát. Zároveň v kódu nesmíte použít 
-víc než dva logické operátory.
-*/
-
-/* const rok = Number(prompt("zadej kalendářní rok."))
-let vysledek = "nepřestupný"
-
-if (rok % 100 === 0 ){
-    if ((rok % 4 === 0 && rok % 100 !== 0) || rok % 400 === 0){
-        vysledek = "přestupný"
-    } else vysledek="nepřestupný"
-}
-document.body.innerHTML = `<p>${rok} je ${vysledek}</p>` */
-
 
 /* const rok = Number(prompt("zadej kalendářní rok."))
 let vysledek = "přestupný"
@@ -384,15 +357,102 @@ if (rok % 100 !== 0){
 document.body.innerHTML = `<p>${rok} je ${vysledek}</p>`
  */
 
-/* 
+
+
+
+/*
+Přestupný rok 2
+
+Napište program, který po zadání kalendářního roku vypíše, zda jde o rok 
+přestupný, či nikoliv. Rozhodnutí v programu proveďte pouze pomocí jedné 
+podmínky se dvěma větvemi. Nesmíte použít vnořené ani žádné další pomocné 
+podmínky.
+*/
+
+/* const rok = Number(prompt("zadej kalendářní rok."))
+let vysledek = "nepřestupný"
+if (rok % 100 === 0 && rok % 400 ===0){
+        vysledek ="přestupný"
+    } 
+else if (rok % 4 === 0){
+        vysledek = "přestupný"
+}
+document.body.innerHTML = `<p>${rok} je ${vysledek}</p>`  
+*/
+
+  
+
+/*
+Přestupný rok 3
+
+Napište program, který po zadání kalendářního roku vypíše, zda jde o rok 
+přestupný, či nikoliv.
+
+Rozhodnutí v programu proveďte pouze pomocí jedné pomínky se dvěma větvemi. 
+Nesmíte použít vnořené ani žádné další pomocné podmínky.
+V celém programu smíte použít pouze dvě logické operace.
+*/
+
+/* const rok = Number(prompt("zadej kalendářní rok."))
+
+let vysledek = "přestupný"
+
+ if (new Date(rok, 1, 29).getDate() === 29) { 
+    vysledek
+} else { 
+    vysledek = "nepřestupný"
+}
+document.body.innerHTML = `<p>${rok} je ${vysledek}</p>`
+ */
+
+
+/*zadej rok
+ja si spocitam pocet dni 
+pokud 365 neprestupny
+pokud 366 prestupny
+*/
+//const rok = Number(prompt("zadej kalendářní rok."))
+//let vypocetDni = Date.prototype.setDate(rok)
+
+
+/* const rok = Number(prompt("zadej kalendářní rok."));
+
+let rozdil = (new Date(rok, 11, 31) - new Date(rok, 0, 0))/1000/60/60/24;
+
+let vysledek = "nepřestupný"
+
+if (rozdil === 366){
+    vysledek = "přestupný"
+} 
+
+document.body.innerHTML = `<p>${rok} je ${vysledek}</p>` */
+
+
+/*----*/
+
+/* const rok = Number(prompt("zadej kalendářní rok."))
+let vysledek = "nepřestupný"
+
+if (rok % 100 === 0 ){
+    if ((rok % 4 === 0 && rok % 100 !== 0) || rok % 400 === 0){
+        vysledek = "přestupný"
+    } else vysledek="nepřestupný"
+}
+document.body.innerHTML = `<p>${rok} je ${vysledek}</p>` */
+
+
+
+/* const rok = Number(prompt("zadej kalendářní rok."))
+let vysledek = "přestupný"
+
 if (rok % 100 === 0) {
 
     if (rok % 400 ===0){
-        vysledek = "ne" + vysledek
+        vysledek = vysledek
     } 
 } else if (rok % 4 === 0){
-    vysledek = "ne" + vysledek
-}
+    vysledek = vysledek
+} else vysledek = "ne" + vysledek
     
 document.body.innerHTML = `<p>${rok} je ${vysledek}</p>`
-*/
+ */
