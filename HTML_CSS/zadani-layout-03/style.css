@@ -1,0 +1,122 @@
+/* intuitivnejsi box-sizing */
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header,
+footer,
+article,
+nav,
+aside,
+.reklama1,
+.reklama2 {
+  padding: 20px;
+}
+
+header > :first-child,
+footer > :first-child,
+article > :first-child,
+nav > :first-child,
+.reklama1 > :first-child,
+.reklama2 > :first-child {
+  margin-top: 0;
+}
+
+header > :last-child,
+footer > :last-child,
+article > :last-child,
+nav > :last-child,
+aside > :last-child,
+.reklama1 > :last-child,
+.reklama2 > :last-child {
+  margin-bottom: 0;
+}
+
+.hlavicka {
+  background-color: #2ecc71;
+}
+.menu {
+  background-color: #e74c3c;
+}
+.obsah {
+  background-color: #f1c40f;
+}
+.reklama1 {
+  background-color: #8e44ad;
+  margin-bottom: 20px;
+}
+.reklama2 {
+  background-color: mediumturquoise;
+}
+.paticka {
+  background-color: dodgerblue;
+}
+
+/* ---------------------------------------------------- */
+
+/*
+	Nakóduj stránku podle obrázku zadani-ukolu.jpg.
+	Rozložení stránky se mění v breakpointech:
+	- 640px
+	- 1000px
+*/
+@media (min-width: 640px){
+  .obsah {
+    display: flex;
+  }
+  .clanek{
+    width: 60%;
+  }
+  
+  .reklamy{
+    width: 40%; 
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+@media (min-width: 1000px){
+  .kontejner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .menu{
+    width:25%;
+  }
+
+  .obsah{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .clanek{
+    width:100%;
+  }
+
+  .reklamy{
+    display: flex;
+    width:100%;
+    flex-direction: row;
+  }
+
+  .reklama1, .reklama2 {
+    width: 50%;
+    height: 100%;
+  }
+
+  .reklama1{
+    margin-right: 10px;
+  }
+  .reklama2{
+    margin-left: 10px;
+  }
+}

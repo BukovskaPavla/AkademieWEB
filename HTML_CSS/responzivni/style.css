@@ -1,0 +1,84 @@
+@media (min-width: 650px) {
+    
+  .kontejner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .hlavicka {
+    flex: 0 0 100%;
+  }
+  
+  .menu {
+    flex: 0 0 30%;
+  }
+  
+  .obsah {
+    flex: 0 0 70%;
+  }
+  
+  .paticka {
+    flex: 0 0 100%;
+  } 
+}
+
+@media (min-width: 700px){
+    .paticka {
+        background-color: pink;
+    }
+}
+  
+  
+  /*----------------*/
+  *,
+  :after,
+  :before {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font: 16px/1.5 sans-serif;
+    margin: 0;
+  }
+  
+  .hlavicka,
+  .menu,
+  .obsah,
+  .reklama,
+  .paticka {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .hlavicka,
+  .paticka {
+    height: 15vh;
+  }
+  
+  .menu,
+  .obsah {
+    height: 70vh;
+  }
+  
+  .hlavicka {
+    background-color: #2ecc71;
+  }
+  
+  .menu {
+    background-color: #e74c3c;
+  }
+  
+  .obsah {
+    background-color: #f1c40f;
+  }
+  
+  .paticka {
+    background-color: #3498db;
+  }
+  
+  
+  
+  Resources

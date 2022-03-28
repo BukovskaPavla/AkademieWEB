@@ -1,0 +1,89 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+body {
+  font: 24px sans-serif;
+}
+
+.hlavicka {
+  padding: 10px;
+  border: 1px solid silver;
+}
+
+.logo {
+  font-weight: bold;
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  background-color: #f0f0f0;
+  color: #e74c3c;
+  display: block;
+  padding: 10px 20px;
+}
+
+a:hover {
+  background-color: #e74c3c;
+  color: white;
+}
+
+/* ---------------------------------------------------- */
+
+/*
+	Nakóduj stránku podle obrázku zadani-ukolu.jpg.
+	Rozložení stránky se mění v breakpointech:
+	- 640px
+	- 1000px
+*/
+
+ul{
+  list-style: none;
+  margin-top: 20px;
+  padding-left: 0px;
+}
+
+li{
+  text-align: center;
+  margin: 1px;
+}
+
+
+@media (min-width: 640px){
+  .hlavicka{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+  }
+
+  li{
+    width: 25%;
+  }
+}
+
+@media (min-width: 1000px){
+  .hlavicka{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  ul {
+    margin-top: 0px;
+  }
+  .logo{
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
