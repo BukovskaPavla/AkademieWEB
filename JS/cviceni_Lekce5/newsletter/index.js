@@ -1,13 +1,13 @@
 //Děkujeme za váš zájem. Těšte se na novinky ze světa frontendu a UX na vaší adrese adresa@domena.cz.
 
-const formular = document.querySelector("#formular")
+/* const formular = document.querySelector("#formular")
 const email = document.querySelector("#email")
 
 formular.addEventListener("submit", (udalost) => {
     udalost.preventDefault() //at te neneapadne stranku znova nacist
     formular.textContent = `Děkujeme za váš zájem. Těšte se na novinky ze světa frontendu a UX na vaší adrese ${email.value}.
     `
-})
+}) */
 
 /* Newsletter, kontrola
 to dáš
@@ -29,12 +29,24 @@ Zobrazte červený rámeček i v případě, že zadaný e-mail
 neobsahuje zavináč. K tomu můžete použít metodu indexOf
 nebo includes.
 */
+//email.classList.add("error")
+//chci pridat classList.add("error") pomoci target
 
-email.addEventListener('input', (e) => {
-    console.log("píšu :" +e.target.value)
-    if (e.target.value === ""){
-        email.style.add("#email")
+
+const emailElement = document.querySelector('#email')
+const telefonElement = document.querySelector('#telefon')
+
+const handleInput = (event) => {
+    const targetElement = event.target
+    console.log('event.target', targetElement)
+    
+    if (targetElement.value === '') {
+        targetElement.classList.add('error')
     } else {
-        console.log("píšu píšu "  +e.target.value)
+        targetElement.classList.remove('error')
     }
-  });
+    
+}
+
+emailElement.addEventListener('input', handleInput)
+telefonElement.addEventListener('input', handleInput)
