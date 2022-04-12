@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  color: #444;
+}
+
+body {
+  margin: 0;
+
+  background-color: lightblue;
+}
+
+.container {
+  max-width: 35rem;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
