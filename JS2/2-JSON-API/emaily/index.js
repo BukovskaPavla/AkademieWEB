@@ -1,6 +1,6 @@
 /* import { Email } from "./Email/index.js"; */
 import { EmailsFolder } from "./EmailsFolder/index.js";
-//import { EmailsFolder } from "./EmailsFolder/index.js"
+
 
 let url = "https://apps.kodim.cz/daweb/trening-api/apis/emails"
 

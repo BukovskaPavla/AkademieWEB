@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="ShoppingItem/style.css" />
+  <link rel="stylesheet" href="ShoppingList/style.css" />
+
+  <script type="module" src="index.js"></script>
+
+  <title>Nákupní seznam</title>
+</head>
+
+<body>
+  <div class="container">
+    <a>Vytvoř seznam:</a>
+    <input type="text" id="seznam">
+    <button id="vytvorSeznam">Vytvoř seznam</button>
+    <br>
+    <p>Položka: </p>
+    <input type="text" id="product">
+    <p>Množství: </p>
+    <input type="text" id="amount">
+    <br>
+    <button id="btn-add">Přidat</button>
+    
+    <p>Tlačítko na vymazání položky z seznamu(zatím natvrdo v kodu)</p>
+    <button id="delete">Delete</button>
+
+    <button id="smazSeznam">Smaž celý seznam</button>
+  </div>
+  <div id="list-container" class="container"></div>
+</body>
+
+</html>
