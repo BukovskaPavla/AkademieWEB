@@ -33,7 +33,7 @@ nebo includes.
 //chci pridat classList.add("error") pomoci target
 
 
-const emailElement = document.querySelector('#email')
+/* const emailElement = document.querySelector('#email')
 const telefonElement = document.querySelector('#telefon')
 
 const handleInput = (event) => {
@@ -46,6 +46,22 @@ const handleInput = (event) => {
         targetElement.classList.remove('error')
     }
     
+}
+
+emailElement.addEventListener('input', handleInput)
+telefonElement.addEventListener('input', handleInput) */
+const emailElement = document.querySelector('#email')
+const telefonElement = document.querySelector('#telefon')
+
+const handleInput = (event) => {
+    const targetElement = event.target
+    const email = targetElement.value
+    const chybnyVstup =
+        email === ''
+        || !email.includes('@')
+        || email.includes(' ')
+        || email.length < 5
+    targetElement.classList.toggle('error', chybnyVstup)
 }
 
 emailElement.addEventListener('input', handleInput)

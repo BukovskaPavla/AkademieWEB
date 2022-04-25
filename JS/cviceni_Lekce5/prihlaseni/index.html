@@ -9,10 +9,25 @@
     <script type="module" src="index.js"></script>
 </head>
 <body>
-    <form id="prihlaseni" action="">
+    <div class="container">
+        <form id="login-form">
+          <h2 id="status"></h2>
+          <label class="field"
+            >E-mail: <input id="email-input" type="email"
+          /></label>
+          <label class="field"
+            >Password: <input id="password-input" type="password" required
+          /></label>
+          <div class="controls">
+            <button type="submit">Přihlásit</button>
+          </div>
+        </form>
+      </div>
+
+    <!-- <form id="prihlaseni" action="">
         <input id="email" type="email" />
         <input id="heslo" type="password" />
         <button>Přihlásit</button>
-    </form>
+    </form> -->
 </body>
 </html>

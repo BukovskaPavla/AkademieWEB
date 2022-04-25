@@ -9,18 +9,20 @@ Nápověda: Rozumným postupem je vytvořit si proměnnou side, která
 bude obsahovat číslo strany kostky. Tuto proměnnou můžete vždy při 
 stisknutí klávesy navýšit o jedna a z této hodnoty zkonstruovat 
 řetězec pro atribut src. */
-const stranka = document.querySelector("html")
 const kostka = document.querySelector(".dice")
-const side = 1
 
-stranka.addEventListener("keydown",zvysCislo)
+let side = 1
 
-const zvysCislo = (side) => {
+const zvysCislo = (event) => {
     if (side < 6 ){
         side = side + 1
-       return kostka.style.src = `img/side${side}.svg`
+       return kostka.src = `img/side${side}.svg`
     } else {
         side = 1
-        return kostka.style.src = `img/side${side}.svg`
+        return kostka.src = `img/side${side}.svg`
     }
 }
+
+
+document.addEventListener("keydown", zvysCislo)
+

@@ -30,5 +30,9 @@ const zazvon = () => {
 }
 const doba = Number(prompt("Za jak dlouho mám zazvonit? (sekudny)"))*1000
 
-setTimeout(zazvon, doba)
+const casovacBtn = document.querySelector("button")
+const casovacInpt = document.querySelector(".time-input")
 
+casovacInpt.textContent = doba/1000
+
+setTimeout(zazvon, doba)
