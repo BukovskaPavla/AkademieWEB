@@ -1,0 +1,11 @@
+.day{
+    color: red;
+    font-weight: bold;
+}
+.month{
+    color: green;
+}
+.year{
+    color: blue;
+    font-size: 80%;
+}

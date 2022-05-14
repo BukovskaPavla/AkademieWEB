@@ -1,0 +1,16 @@
+/* .email{
+    background-color: lime;
+    border: 1px solid green;
+    border-radius: 25px;
+    padding: 5px 5px 5px 15px;
+    margin-bottom: 15px;
+} */
+
+.unread{
+    padding-left: 200px;
+    color: red;
+}
+
+.no-unread{
+    padding-left: 200px;
+}
