@@ -1,0 +1,20 @@
+.zarovka {
+    width: 100px;
+    position: relative;
+}
+
+.zarovka__obrazek {
+    width: 100%;
+}
+
+.zarovka__barva {
+    aspect-ratio: 1/1;
+    width: 35px;
+    //background-color: #ff000099 ;
+    position: absolute; 
+    top: 18px;
+    left: 33px;
+    border-radius: 50%;
+    clip-path: inset(0 0 8px 0);
+    opacity: 0.5;
+}
